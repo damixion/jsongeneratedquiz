@@ -1,0 +1,25 @@
+<div class="names">Jesteś zalogowany jako: {{name}}</div>
+
+<button mat-raised-button color="warn" (click) = "go()" *ngIf=" start == false">START !!!</button>
+<mat-card *ngIf="start == true">
+<section>
+   <label class="example-margin">{{actQuery.title }}</label>
+   <ul>
+    <li *ngFor="let aqt of actQuery.answer let i = index">
+      <mat-checkbox [color]="colorCheck"  [checked]="selected === i" (change)="selected = i" >
+        {{aqt}}
+      </mat-checkbox>
+    </li>
+  </ul>
+</section>
+
+
+<button mat-raised-button color="warn" (click)="end()">END !</button>
+
+<button class="next-btn" mat-fab color="accent"  *ngIf="query.length > nAct" (click) = "next()" >
+  <mat-icon>arrow_right_alt</mat-icon>
+</button>
+
+<countdown #timer [config]="{leftTime: 20}" (event)="test($event)"></countdown>
+
+</mat-card>

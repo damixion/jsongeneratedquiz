@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Typ zmiennych o nazwie float przechowuje:",
+    "answer": ["liczby calkowite", "napisy", "liczby zmiennoprzecinkowe","pojedyncze znaki"],
+    "positive": "2"
+  },
+  {
+    "title": "Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:",
+    "answer": ["Wait(2000)","Stop(2000)", "Delay(2000)", "Sleep(2000)"],
+    "positive": "3"
+  },
+  {
+    "title": "Ktora deklaracja jest zapisana poprawnie ?",
+    "answer": ["int x", "integer x", "x:integer","x=integer"],
+    "positive": "0"
+  }
+]

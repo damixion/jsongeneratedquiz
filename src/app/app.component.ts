@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'quiz';
+
+  name = '';
+  point = '';
+
+  setName(n: string): void
+  {
+    this.name = n;
+
+  }
+
+  setPoint(p: string): void
+  {
+    this.point = p;
+  }
+
 }

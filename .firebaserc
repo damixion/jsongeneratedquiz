@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "collection-movie": {
+      "hosting": {
+        "quiz": [
+          "collection-movie"
+        ]
+      }
+    }
+  }
+}
